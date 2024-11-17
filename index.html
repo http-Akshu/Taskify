@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskify - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Side: Image -->
+        <div class="image-section"></div>
+        
+        <!-- Right Side: Login/Signup -->
+        <div class="form-section">
+            <div class="auth-card">
+                <h1>Welcome to Taskify</h1>
+                
+                <!-- Login Form -->
+                <div id="login-form">
+                    <h2>Login</h2>
+                    <input type="email" id="login-email" placeholder="Email" required />
+                    <input type="password" id="login-password" placeholder="Password" required />
+                    <button id="login-button" type="button">Login</button>
+                    <p>Don't have an account? <span id="show-signup" style="cursor: pointer; color: blue;">Sign up</span></p>
+                </div>
+
+                <!-- Signup Form -->
+                <div id="signup-form" style="display: none;">
+                    <h2>Sign Up</h2>
+                    <input type="text" id="signup-name" placeholder="Full Name" required />
+                    <input type="email" id="signup-email" placeholder="Email" required />
+                    <input type="password" id="signup-password" placeholder="Password" required />
+                    <button id="signup-button" type="button">Sign Up</button>
+                    <p>Already have an account? <span id="show-login" style="cursor: pointer; color: blue;">Login</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

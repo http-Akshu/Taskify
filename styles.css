@@ -1,0 +1,121 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Left Side: Image Section */
+.image-section {
+    width: 65%;
+    background: url("./FAU.jpeg") no-repeat center center;
+    background-size: cover;
+}
+
+/* Right Side: Form Section */
+.form-section {
+    width: 35%;
+    background-color: #f0f4fa; /* Light grayish-blue color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form Card */
+.auth-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    transform: translateY(20px);
+    animation: dropIn 1s ease forwards;
+    opacity: 0;
+}
+
+.auth-card h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+}
+
+.auth-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #6a11cb;
+}
+
+.auth-card input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #555;
+    transition: border-color 0.3s ease;
+}
+
+.auth-card input:focus {
+    border-color: #2575fc;
+    outline: none;
+}
+
+.auth-card button {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #2575fc;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth-card button:hover {
+    background: #6a11cb;
+    transform: translateY(-3px);
+}
+
+.auth-card p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.auth-card span {
+    color: #6a11cb;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.auth-card span:hover {
+    color: #2575fc;
+    text-decoration: underline;
+}
+
+/* Drop-in Animation for Form Card */
+@keyframes dropIn {
+    0% { transform: translateY(-20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskify - Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <h2 id="user-greeting">Hello, Username</h2>
+            <p class="quote">"Organize your tasks, simplify your life."</p>
+        </div>
+        
+        <!-- Right Section -->
+        <div class="right-section">
+            <h1 id="dashboard-heading">Welcome to Taskify</h1>
+            <hr class="divider">
+            <div class="button-container">
+                <button id="completed-tasks-button">Completed Tasks</button>
+                <button id="logout-button">Logout</button>
+            </div>
+            <div class="task-input-container">
+                <input type="text" id="task-input" placeholder="Enter a new task" />
+                <button id="add-task-button">Add Task</button>
+            </div>
+            <div class="task-list-container">
+                <ul id="task-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

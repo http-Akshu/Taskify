@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left Section */
+.left-section {
+    width: 25%;
+    background-color: #2c3e50; /* Darker background for left section */
+    display: flex;
+    flex-direction: column; /* Allows stacking of elements */
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Adds padding inside the left section */
+}
+
+.left-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ecf0f1; /* Light color for text */
+    margin-bottom: 10px; /* Adds space below the heading */
+}
+
+.quote {
+    font-size: 16px;
+    font-style: italic;
+    color: #bdc3c7; /* Light gray for quote */
+    text-align: center;
+    margin-top: 10px; /* Ensures proper spacing between heading and quote */
+}
+
+
+/* Right Section */
+.right-section {
+    width: 75%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F4F6F7; /* Light Gray */
+}
+
+#dashboard-heading {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #34495E; /* Dark Gray-Blue */
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #BDC3C7; /* Gray */
+    width: 100%; /* Full width for better layout */
+    margin: 20px 0;
+}
+
+/* Button Container */
+.button-container {
+    margin-top: 0px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 15px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498DB; /* Vibrant Blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #2980B9; /* Slightly darker blue */
+}
+
+/* Task Input Section */
+.task-input-container {
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#task-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #BDC3C7; /* Gray */
+    border-radius: 4px;
+    width: 50%; /* Adjusted width */
+    background-color: #FFFFFF; /* White */
+    color: #34495E; /* Dark Gray-Blue */
+}
+
+#add-task-button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #27AE60; /* Green */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#add-task-button:hover {
+    background-color: #229954; /* Slightly darker green */
+}
+
+/* Task List */
+.task-list-container ul {
+    list-style: none;
+    padding: 0;
+    width: 100%; /* Full width for better alignment */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers tasks horizontally */
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    padding: 10px;
+    border: 1px solid #BDC3C7; /* Gray */
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF; /* White */
+    width: 150%; /* Matches the width of #task-input */
+}
+
+.task-text {
+    flex: 1;
+    color: #34495E; /* Dark Gray-Blue */
+}
+
+.task-actions button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #2ECC71; /* Green */
+    color: white;
+}
+
+.task-actions button:hover {
+    background-color: #27AE60; /* Slightly darker green */
+}
+
+/* Completed Task Button Styling */
+.task-actions button.delete-button {
+    background-color: #E74C3C; /* Red */
+}
+
+.task-actions button.delete-button:hover {
+    background-color: #C0392B; /* Darker Red */
+}
+
+/* No Tasks Message */
+.no-tasks {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #888;
+    text-align: center;
+    width: 100%;
+}
+
+
+
